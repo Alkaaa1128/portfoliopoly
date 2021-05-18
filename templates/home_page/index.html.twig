@@ -1,0 +1,449 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio POLY Alexandre{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/styles.scss">  
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>    
+{% endblock %}
+
+{% block body %}
+  <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu ' ></i>
+                </div>
+
+                <div>
+                    <a href="#" class="nav__logo">Alexandre</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#works" class="nav__link">Travaux réalisés</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Me contacter</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== ACCUEIL =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <div class="home__img">
+                            <img src="/img/perfil.png" alt="" style="width: 170px;height: 170px;">
+                        </div>
+
+                        <h1 class="home__title">Alexandre Poly</h1>
+                        <span class="home__profession">Marketing digital et conception de site web</span>
+
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/alexandre-poly-1196171b2/" target="_blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                        
+                        <a download="" href="/pdf/Alexandre-Cv.pdf" class="button home__button">Télécharger le CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== A PROPOS DE MOI =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">A propos de moi</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__data">
+                        <p class="about__text">Bonjour, je suis développeur front-end & Wordpress. Je réalise actuellement des études dans le Webmarketing et de la conception de site Web. Les nombreux projet scolaires & professionnels que j'ai pu réalisé m'ont apporté de réelles compétences dans le domaine du digital</p>
+                        <img src="/img/about.png" alt="" class="about__img">
+                    </div>
+
+                    <div>
+                        <div class="about__information">
+                            <h3 class="about__information-title">Informations</h3>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-user about__information-icon'></i>
+                                <span>Alexandre Poly</span>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-phone about__information-icon' ></i>
+                                <span>07 77 76 75 29</span>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-envelope about__information-icon' ></i>
+                                <span>alex.p1@hotmail.fr</span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information">
+                            <h3 class="about__information-title">Expérience & disponibilités</h3>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-medal about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">1 an </span>
+                                    <span class="about__information-subtitle-small">Experience</span>
+                                </div>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-briefcase-alt about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">2 Projets</span>
+                                    <span class="about__information-subtitle-small">Complétés</span>
+                                </div>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-support about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">Disponible</span>
+                                    <span class="about__information-subtitle-small">Du lundi au samedi 8h à 20h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== COMPETENCES =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Mes domaines d'expertise</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__content">
+                        <h3 class="skills__subtitle">Développement web</h3>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Html/css</span>
+                            <span class="skills__number">80%</span>
+                            <span class="skills__bar skills__html"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Wordpress</span>
+                            <span class="skills__number">90%</span>
+                            <span class="skills__bar skills__js"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Javascript</span>
+                            <span class="skills__number">70%</span>
+                            <span class="skills__bar skills__react"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Prestashop</span>
+                            <span class="skills__number">60%</span>
+                            <span class="skills__bar skills__angular"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__content">
+                        <h3 class="skills__subtitle">Marketing digital & Webdesign</h3>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Maquettage d'interfaces web & applications</span>
+                            <span class="skills__number">80%</span>
+                            <span class="skills__bar skills__php"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Elaboration d'une stratégie digitale </span>
+                            <span class="skills__number">70%</span>
+                            <span class="skills__bar skills__node"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Création de l'identité visuelle </span>
+                            <span class="skills__number">90%</span>
+                            <span class="skills__bar skills__firebase"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Photoshop</span>
+                            <span class="skills__number">60%</span>
+                            <span class="skills__bar skills__python"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== DIPLOMES =====-->
+            <section class="education section">
+                <h2 class="section-title">Mon parcours scolaire</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2021 - 2023</h3>
+                            <span class="education__university">IDRAC Toulouse</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">MBA Digital strategy & innovation</h3>
+                            <span class="education__specialty">Stratégie marketing & communication digital</span> 
+                        </div>
+                    </div>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2020 - 2021</h3>
+                            <span class="education__university">WIS Toulouse</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">Bachelor chef de projet digital</h3>
+                            <span class="education__specialty">Marketing digital & développement web</span> 
+                        </div>
+                    </div>
+
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2017 - 2019</h3>
+                            <span class="education__university">ESICAD Labège</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">BTS NRC</h3>
+                            <span class="education__specialty">Négociation et relation client</span> 
+                        </div>
+                    </div>
+
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2015 - 2017</h3>
+                            <span class="education__university">LYCEE PARDAILHAN</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">Bac général</h3>
+                            <span class="education__specialty">Littérature & spécialité anglais</span> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SERVICES =====-->
+            <section class="services section" id="services">
+                <h2 class="section-title">Mes services</h2>
+
+                <div class="services__container bd-grid">
+                    <div class="services__content">
+                        <i class='bx bxs-terminal services__icon'></i>
+                        <h3 class="services__title">Création de site web</h3>
+                        <p class="services__description">Les différents projets que j'ai pu réalisé dans le cadre de mes études et de mes stages m'ont apporté de nombreuses compétences dans la création de site web.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bxs-user-pin services__icon'></i>
+                        <h3 class="services__title">UI/UX</h3>
+                        <p class="services__description">Je mets un poing d'honneur à situer l'utilisateur au centre de mes préoccupations. La création d'une interface épurée et pertinente est primordiale pour convaincre le visiteur de découvrir votre site web.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bxs-palette services__icon'></i>
+                        <h3 class="services__title">Web Design</h3>
+                        <p class="services__description">L'aspect de votre site web est un point clé pour sa réussite, c'est pourquoi je m'engage à vous présenter diverses options concernant le design de votre site & de vous orienter dans vos interrogations.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bxs-bar-chart-square services__icon'></i>
+                        <h3 class="services__title">Elaboration d'une stratégie digitale</h3>
+                        <p class="services__description">Afin de booster votre visibilité sur le web, il est important de définir les bons leviers & canaux de communication pour acquérir toujours plus de visiteurs sur votre site. </p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bxs-message-edit services__icon'></i>
+                        <h3 class="services__title">Rédaction de contenu</h3>
+                        <p class="services__description">Pour attirer des visiteurs, il faut leur offrir ce qu'ils cherchent. C'est la raison pour laquelle poster régulièrement du contenu sur son site web ou sur les réseaux sociaux est d'une importance capitale</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bxs-devices services__icon'></i>
+                        <h3 class="services__title">Interface Mobile</h3>
+                        <p class="services__description">Plus de 80% des internautes utilisent des appareils mobiles pour surfer sur le Web. Avoir une interface adaptée au mobile est obligatoire. Ne vous inquiétez pas, elle est inclus dans la totalité des projets que je réalise. </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== VOUS AVEZ UN PROJET ? =====-->
+            <section class="project section">
+                <div class="project__container bd-grid">
+                    <div class="project__data">
+                        <h2 class="section-title project__title">Vous avez un projet en tête ? </h2>
+                        <p class="project__description">Si vous avez un projet que vous souhaitez réaliser, n'hésitez pas et dîtes moi de quoi il s'agit, et quels services je peux vous offrir, contactez-moi directement ici. </p>
+                        <a href="#contact" class="button button__light">Contactez-moi</a>
+                    </div>
+
+                    <img src="/img/projectmind.png" alt="" class="project__img">
+                </div>
+            </section>
+
+            <!--===== MES TRAVAUX =====-->
+            <section class="works section" id="works">
+                <span class="section-subtitle">Mon Portfolio</span>
+                <h2 class="section-title">Mes travaux récents</h2>
+
+                <div class="works__container bd-grid">
+                    <div class="works__img">
+                        <img src="/img/work1.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="http://s864520608.onlinehome.fr/" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Projet 1</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="/img/work2.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="/pdf/Supportscommerciaux.pdf" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Projet 2</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="/img/work3.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">A venir</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="/img/work4.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">A venir</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="/img/work5.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">PA venir</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="/img/work6.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">A venir</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contactez-moi</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Nom" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <input type="text" placeholder="Projet" class="contact__input">
+
+                        <textarea name="" id="" cols="0" rows="10" placeholder="Décrivez moi votre projet..." class="contact__input"></textarea>
+
+                        <input type="submit" value="Envoyer votre message" class="button contact__button">
+                    </form>
+
+                    <div class="contact__info">
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">Appellez-moi</h3>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bxs-phone about__information-icon'></i>
+                            <span>07 77 76 75 29</span>
+                        </div>
+
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">E-mail</h3>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-mail-send about__information-icon'></i>
+                            <span>alex.p1@hotmail.fr</span>
+                        </div>
+
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">Localisation</h3>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bxs-compass about__information-icon'></i>
+                            <span>5 rue jeanne lanvin 31300 TOULOUSE</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <h1 class="footer__title">Alexandre POLY</h1>
+                <p class="footer__description">Au plaisir de vous rencontrer bientôt, consultez mes réseaux ici </p>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/alexandre-poly-1196171b2/" target="_blank" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/alexandre___poly/" target="_blank" class="footer__link"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <p class="footer__copy">Copyright 2021 - POLY Alexandre</p>
+            </div>
+        </footer>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--===== MAIN JS =====-->
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    <script src="/js/main.js"></script> 
+{% endblock %}
